@@ -8,12 +8,14 @@ double PI = 3.14159265;
 
 QString valcur="0";
 QString  valvol="0";
+QString valimp="0";
 QString valpow="0";
 QString valpowl="0";
 QString valpowp="0";
 QString valvos="0";
 QString valjos="0";
 QString valtos="0";
+QString valios="0";
 QString ind="ind";
 QString kap="kap";
 QString teksti="nolla";
@@ -154,17 +156,21 @@ void Window::resetButtonClicked(bool tsekkaus){
         emit reset->click();
         valpow="0";
         valcur="0";
+        valimp="0";
         valvol="0";
         valtos="0";
         valvos="0";
         valjos="0";
+        valios="0";
         valpowp="0";
         valpowl="0";
+
         teho->setText(valpow);
         pteho->setText(valpowp);
         lteho->setText(valpowl);
         jannite->setText(valvol);
         virta->setText(valcur);
+        imped->setText(valimp);
         tos->setText(valtos);
         vos->setText(valvos);
         jos->setText(valjos);
@@ -240,6 +246,7 @@ void Window::slotButtonClicked(bool checked)
     label1->setText("kap");
 }
 
+   // else if ()
 
                if(powl>0 && pow!=0){
 
