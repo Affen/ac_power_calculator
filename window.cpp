@@ -129,8 +129,21 @@ Window::Window(QWidget *parent) :
                  label =new QLabel("Ω",this);
                  label->setGeometry(320,150,50,25);
 
-               label1 = new QLabel(this);
+                 ios = new QLineEdit (this);
+                  ios->setGeometry(360,150,50,25);
+                 ios->setText(valios);
+
+                 label = new QLabel("∠",this);
+                        label->setGeometry(340,150,20,25);
+
+                        label=new QLabel("°",this);
+                        label->setGeometry(415,150,50,25);
+
+               label1 = new QLabel(this); // kapasitiivista vai induktiivistä
                 label1->setGeometry(730,100,20,25);
+
+
+
 
  QFont font("Courier",10);
  // Create and position the button
@@ -192,18 +205,22 @@ void Window::slotButtonClicked(bool checked)
 
     valcur= virta-> text();
     valvol= jannite->text();
+    valimp= imped->text();
     valpow=teho->text();
     valvos=vos->text();
     valtos=tos->text();
     valjos=jos->text();
+    valios=ios->text();
     valpowl=lteho->text();
     valpowp=pteho->text();
 
     double viros=valvos.toDouble();
     double janos=valjos.toDouble();
     double tehos=valtos.toDouble();
+    double impos=valios.toDouble();
      double cur = valcur.toDouble();
     double vol=valvol.toDouble();
+    double imp=valimp.toDouble();
     double pow=valpow.toDouble();
     double powl=valpowl.toDouble();
     double powp=valpowp.toDouble();
@@ -237,6 +254,10 @@ void Window::slotButtonClicked(bool checked)
            jos->setText(QString::number(janos));
           jannite->setText(QString::number(vol));
        }
+    else if (imp==0){
+        if (tehos!=0){
+            impos=tehos;}
+        else {viros=impos;}}
     powp=pow*(cos(tehos* PI / 180.0));
     pteho->setText(QString::number(fabsf(powp)));
     powl=pow*(sin(tehos*PI/180.0));
@@ -246,7 +267,8 @@ void Window::slotButtonClicked(bool checked)
     label1->setText("kap");
 }
 
-   // else if ()
+
+
 
                if(powl>0 && pow!=0){
 

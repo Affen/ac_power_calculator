@@ -30,6 +30,7 @@ private:
  QLineEdit *vos;
  QLineEdit *jos;
  QLineEdit *imped;
+ QLineEdit *ios;
  QLabel   *label;
  QLabel    *label1;
  QLabel    *label2;

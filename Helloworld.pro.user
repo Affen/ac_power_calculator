@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.6.0, 2016-02-27T20:31:51. -->
+<!-- Written by QtCreator 3.6.0, 2016-02-27T21:20:17. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -529,8 +529,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Helloworld</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/affen/OneDrive/Asiakirjat/GitHub/Koodikellari/Näennäisteholaskuri/Helloworld.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Helloworld2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/affen/OneDrive/Asiakirjat/GitHub/Koodikellari/ac_power_calculator/Helloworld.pro</value>
     <value type="bool" key="QmakeProjectManager.QmakeRunConfiguration.UseLibrarySearchPath">true</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">Helloworld.pro</value>
