@@ -255,9 +255,12 @@ void Window::slotButtonClicked(bool checked)
           jannite->setText(QString::number(vol));
        }
     else if (imp==0){
-        if (tehos!=0){
-            impos=tehos;}
+        if (pow!=0){
+            tehos=impos;
+            ios->setText(QString::number(impos));}
         else {viros=impos;}}
+
+
     powp=pow*(cos(tehos* PI / 180.0));
     pteho->setText(QString::number(fabsf(powp)));
     powl=pow*(sin(tehos*PI/180.0));
